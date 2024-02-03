@@ -1,0 +1,54 @@
+\section*{Homework}
+\textbf{Mobile Telephone Architecture Details:}
+\hrulefill
+
+The detailed telephone model is grounded in real-world mobile telephone design. The model comprises a telephone controller class that engages with the user through a speaker, display, and keypad. When a user initiates a call, it traverses the wireless network, a generalized representation of a wireless-network-and-base-station architecture. This network processes incoming calls, locates recipients, determines recipient phone status, and facilitates the call.
+
+The mobile telephone sample includes two models: a use-case model and an architecture model. The use-case model contains use cases and activity diagrams illustrating user interactions. The architecture model builds on the use-case model, incorporating sequence diagrams, domain diagrams, and state machine diagrams to depict the static and dynamic aspects of the system.
+\hrulefill
+
+\section*{Native vs Non-Native Mobile Apps}
+\hrulefill
+\textbf{Native Mobile Apps:}
+Built entirely in technologies tailored for proprietary mobile OS and hardware functions of mobile operating system vendors (Apple/iOS \& Google/Android). These apps directly access classes, objects, functions, and methods without requiring additional layers.
+
+\textbf{Non-Native Mobile Apps:}
+Source code is not compiled into binary code. Instead, the source code is stored within the application itself. During initialization, the app reads and runs the code from these saved source code files. Note: The code is available to anyone with the application file, as it is not encrypted or obfuscated by default.
+
+Learn more about securing non-native apps without coding in a separate post.
+\hrulefill
+
+\section*{Patrones de Diseño para Aplicaciones Móviles (Design Patterns for Mobile Applications)}
+\hrulefill
+\textbf{MVC (Model-View-Controller):}
+\textit{Description:} Separates an application into three interconnected components: Model (data and business logic), View (user interface), and Controller (handles user input and updates the Model and View).
+\textit{Usage:} Provides a clean separation of concerns, making it easier to manage and maintain code.
+
+\textbf{MVVM (Model-View-ViewModel):}
+\textit{Description:} Similar to MVC but introduces ViewModel, exposing methods and commands to manage the state and behavior of the View.
+\textit{Usage:} Promotes a more reactive approach, facilitating data-binding and UI updates in response to changes in underlying data.
+
+\textbf{Singleton Pattern:}
+\textit{Description:} Ensures a class has only one instance and provides a global point of access to it.
+\textit{Usage:} Useful for managing shared resources, like database connections or network managers, across different parts of the application.
+
+\textbf{Observer Pattern:}
+\textit{Description:} Defines a one-to-many dependency between objects so that when one object changes state, all dependents are notified and updated automatically.
+\textit{Usage:} Often used for event handling and notification mechanisms.
+
+\textbf{Decorator Pattern:}
+\textit{Description:} Attaches additional responsibilities to an object dynamically, providing a flexible alternative to subclassing for extending functionality.
+\textit{Usage:} Useful for adding features or behaviors to classes without altering their structure.
+
+\textbf{Factory Method Pattern:}
+\textit{Description:} Defines an interface for creating an object but leaves the choice of its type to subclasses, creating instances based on certain conditions.
+\textit{Usage:} Helpful when a class cannot anticipate the class of objects it must create.
+
+\textbf{Adapter Pattern:}
+\textit{Description:} Allows the interface of an existing class to be used as another interface.
+\textit{Usage:} Useful for integrating new features or services into an existing codebase without modifying the existing code.
+
+\textbf{Strategy Pattern:}
+\textit{Description:} Defines a family of algorithms, encapsulates each algorithm, and makes them interchangeable, letting the algorithm vary independently from clients using it.
+\textit{Usage:} Valuable when defining a family of algorithms, encapsulating each one, and making them interchangeable.
+\hrulefill
